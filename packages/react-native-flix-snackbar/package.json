@@ -15,6 +15,18 @@
     "release": "release-it",
     "build": "tsc"
   },
+  "release-it": {
+    "git": false,
+    "npm": {
+      "publish": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flixyudh/flix.git"

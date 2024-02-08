@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "release": "yarn workspaces foreach -A -p run release",
+    "release": "npm run release --workspaces && release-it",
     "build": "yarn workspaces foreach run build"
   },
   "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
@@ -79,9 +79,6 @@
     },
     "npm": {
       "publish": false
-    },
-    "github": {
-      "release": false
     },
     "plugins": {
       "@release-it/conventional-changelog": {
