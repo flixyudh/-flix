@@ -65,10 +65,8 @@ const Button = ({ label, variant, style, borderless, children, ...rest }) => {
 
   const RenderChidren = useCallback(() => {
     if (children) return children;
-    return (
-      <Text style={[textStyles, { fontWeight: '500' }]}>{title || label}</Text>
-    );
-  }, [title]);
+    return <Text style={[textStyles, { fontWeight: '500' }]}>{label}</Text>;
+  }, [label]);
 
   return (
     <View style={[style, !borderless && styles.border]}>
