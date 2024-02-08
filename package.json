@@ -1,6 +1,5 @@
 {
   "name": "@flix",
-  "private": true,
   "description": "List of React Native Component created by Flix",
   "workspaces": [
     "packages/*"
