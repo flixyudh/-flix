@@ -39,6 +39,7 @@
   ],
   "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
