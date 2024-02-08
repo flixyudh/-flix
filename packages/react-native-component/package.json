@@ -1,5 +1,5 @@
 {
-  "name": "@flixyudh/react-native-component",
+  "name": "@flix-react-native/component",
   "version": "1.0.0",
   "description": "List component collection created by Flix",
   "main": "dist/index.js",

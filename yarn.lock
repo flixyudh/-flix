@@ -1100,9 +1100,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flixyudh/react-native-component@workspace:packages/react-native-component":
+"@flix-react-native/component@workspace:packages/react-native-component":
   version: 0.0.0-use.local
-  resolution: "@flixyudh/react-native-component@workspace:packages/react-native-component"
+  resolution: "@flix-react-native/component@workspace:packages/react-native-component"
   dependencies:
     "@types/react-native": 0.70.0
   peerDependencies:
@@ -1111,9 +1111,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flixyudh/react-native-snackbar@workspace:packages/react-native-flix-snackbar":
+"@flix-react-native/snackbar@workspace:packages/react-native-flix-snackbar":
   version: 0.0.0-use.local
-  resolution: "@flixyudh/react-native-snackbar@workspace:packages/react-native-flix-snackbar"
+  resolution: "@flix-react-native/snackbar@workspace:packages/react-native-flix-snackbar"
   dependencies:
     "@types/react-native": 0.70.0
   peerDependencies:
@@ -1122,9 +1122,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flixyudh@workspace:.":
+"@flix-react-native@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@flixyudh@workspace:."
+  resolution: "@flix-react-native@workspace:."
   dependencies:
     "@react-native/babel-preset": ^0.73.20
     "@react-native/eslint-config": ^0.73.2
