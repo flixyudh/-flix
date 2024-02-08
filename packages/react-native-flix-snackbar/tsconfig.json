@@ -1,0 +1,26 @@
+{
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "es6",
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": [
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "esnext",
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@flix/react-native-component",
+  "version": "1.0.0",
+  "description": "List component collection created by Flix",
+  "main": "dist/index.js",
+  "react-native": "./dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "release": "release-it",
+    "build": "tsc && cp src/Images/errorImage.png dist/Images/errorImage.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flixyudh/flix.git"
+  },
+  "homepage": "https://github.com/flixyudh/flix/tree/master/packages/react-native-component",
+  "keywords": [
+    "react-native",
+    "ui",
+    "component",
+    "ios",
+    "android"
+  ],
+  "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react-native": "0.70.0"
+  },
+  "license": "MIT"
+}
