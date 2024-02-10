@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "release": "yarn && yarn build && npm run release --workspaces && release-it",
+    "release": "yarn build && npm run release --workspaces && release-it",
     "build": "yarn workspaces foreach run build"
   },
   "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
