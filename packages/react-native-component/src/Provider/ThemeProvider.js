@@ -8,13 +8,15 @@ const ThemeContext = React.createContext({
   applyColors: () => null,
   fonts: BaseFont,
   applyFont: () => null,
+  isDark: false,
 });
 
 const ThemeProvider = ({ children, theme = { colors: null, fonts: null } }) => {
-  const { colors, applyColors, fonts, applyFont } = InternalUseTheme(theme);
+  const { colors, applyColors, fonts, applyFont, isDark } =
+    InternalUseTheme(theme);
   const contextValue = React.useMemo(
-    () => ({ colors, applyColors, fonts, applyFont }),
-    [colors, applyColors, fonts, applyFont]
+    () => ({ colors, applyColors, fonts, applyFont, isDark }),
+    [colors, applyColors, fonts, applyFont, isDark]
   );
 
   return (

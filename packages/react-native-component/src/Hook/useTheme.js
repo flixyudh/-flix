@@ -4,7 +4,13 @@ import { ThemeContext } from '../Provider/ThemeProvider';
 /**
  * @example
  * const { colors } = useTheme();
- * @returns {{applyColors: function, colors:import('../styles/colors').Colors}}
+ * @returns {{
+ * applyColors: function,
+ * colors:import('../styles/colors').Colors,
+ * applyFont:function,
+ * fonts:{fontFamily:string},
+ * isDark: boolean
+ * }}
  */
 const useTheme = () => {
   const store = React.useContext(ThemeContext);
