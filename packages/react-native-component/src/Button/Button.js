@@ -8,6 +8,7 @@ import { Text } from '../index';
  * @prop {String} [ButtonProps.label] - Label of Button
  * @prop {('outlined'|'filledTonal'|'filled')} [ButtonProps.variant=filled] - Whether to show the child components or not
  * @prop {import('react-native').ViewProps} ButtonProps.style - Button style container
+ * @prop {import('react-native').TextStyle} ButtonProps.textStyle - Button style container
  * @prop {Boolean} [ButtonProps.borderless=false] - enable or disable Button borderRadius
  * @prop {import('react').ReactElement} [ButtonProps.children] - Render custom JSX inside Button
  */
@@ -15,7 +16,15 @@ import { Text } from '../index';
  * @author [Yudi Iswandi (Flix)](https://github.com/zxccvvv)
  * @param {ButtonProps & import('react-native').PressableProps} props
  */
-const Button = ({ label, variant, style, borderless, children, ...rest }) => {
+const Button = ({
+  label,
+  variant,
+  style,
+  borderless,
+  textStyle,
+  children,
+  ...rest
+}) => {
   const { colors } = useTheme();
 
   const buttonStyles = useMemo(() => {
@@ -65,7 +74,11 @@ const Button = ({ label, variant, style, borderless, children, ...rest }) => {
 
   const RenderChidren = useCallback(() => {
     if (children) return children;
-    return <Text style={[textStyles, { fontWeight: '500' }]}>{label}</Text>;
+    return (
+      <Text style={[textStyles, { fontWeight: '500' }, textStyle]}>
+        {label}
+      </Text>
+    );
   }, [label]);
 
   return (
