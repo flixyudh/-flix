@@ -909,11 +909,11 @@
 
 "@flix-react-native/component@file:/Users/administrator_1/Documents/Flix/@flix/packages/react-native-component":
   "resolved" "file:packages/react-native-component"
-  "version" "1.0.3"
+  "version" "1.0.4"
 
 "@flix-react-native/snackbar@file:/Users/administrator_1/Documents/Flix/@flix/packages/react-native-flix-snackbar":
   "resolved" "file:packages/react-native-flix-snackbar"
-  "version" "1.0.3"
+  "version" "1.0.4"
 
 "@hapi/hoek@^9.0.0", "@hapi/hoek@^9.3.0":
   "version" "9.3.0"
