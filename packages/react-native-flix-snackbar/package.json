@@ -1,6 +1,6 @@
 {
   "name": "@flix-react-native/snackbar",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "Easy usage of snackbar without ref",
   "main": "dist/index.js",
   "react-native": "./dist/index",
